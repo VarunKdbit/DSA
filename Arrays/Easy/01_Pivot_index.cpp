@@ -49,8 +49,6 @@ Instead:
 
 4. If leftSum equals rightSum, return the current index.
 
-
-
 TIME COMPLEXITY : O(n)
 SPACE COMPLEXITY : O(1)
 
