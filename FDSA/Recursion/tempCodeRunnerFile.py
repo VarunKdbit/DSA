@@ -1,11 +1,10 @@
 n=int(input("Enter the number "))
-l=[]
-def pov(n,l) :
-    l.append(n)
-    if n >=1 :
-        print(n)
-    else :
+def pov(n) :
+    
+    if n == 0:
         return
-    pov(n-1,l) 
+    print(n)
+    pov(n-1) 
+    print(n)
 
-print(pov(n,l))
+print(pov(n))
