@@ -21,3 +21,16 @@ def pn1toN(i,n) :
 n=int(input("Enter the number "))
 print(pn1toN(1,n))
 
+#sum of numbers from 1 to n 
+
+def sumofn(s,n) :
+    if n<=0 :
+        print(s)
+        return 
+    s+=n
+    sumofn(s,n-1)
+
+n=int(input("Enter the number "))
+print(sumofn(0,n))
+
+

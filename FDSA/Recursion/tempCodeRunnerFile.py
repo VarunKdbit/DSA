@@ -1,10 +1,6 @@
-def sumofn(s,n) :
-    if n<=0 :
-        print(s)
-        return 
-    s+=n
-    sumofn(s,n-1)
-
-n=int(input("Enter the number "))
-print(sumofn(0,n))
-
+def fac(n) :
+    if n==1 :
+        return 1
+    return n*fac(n-1)
+n=int(input("enter value for n"))
+print(fac(n))
