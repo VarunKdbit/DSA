@@ -1,4 +1,4 @@
-# reverse array using recursion 
+# 1.reverse array using recursion 
 a=[5,6,8,12,14,3,1,4]
 i=0
 j=7
@@ -10,15 +10,20 @@ def rev(a,i,j) :
 
 print(rev(a,i,j))
 
-# Check if the string is palindrome or not 
+# 2.Check if the string is palindrome or not 
 st="asvs"
 def cp(i,j,st) :
     if j<=i :
-        print("true")
-        return 
+        return True
     if st[i]!=st[j] :
-        print("false")
-        return
+        return False
     cp(i+1,j-1,st) 
 print(cp(0,len(st)-1,st))
+
+# 3.Fibonacci number using recursion 
+n=int(input("Enter the number "))
+def fib(i,n) :
+    if i>=n :
+        return
+    if i==0 :
 
