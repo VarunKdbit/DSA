@@ -1,6 +1,10 @@
-def fac(n) :
-    if n==1 :
-        return 1
-    return n*fac(n-1)
-n=int(input("enter value for n"))
-print(fac(n))
+st="asvs"
+def cp(i,j,st) :
+    if j<=i :
+        print("true")
+        return 
+    if st[i]!=st[j] :
+        print("false")
+        return
+    cp(i+1,j-1,st) 
+print(cp(0,len(st)-1,st))
