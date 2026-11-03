@@ -22,8 +22,9 @@ print(cp(0,len(st)-1,st))
 
 # 3.Fibonacci number using recursion 
 n=int(input("Enter the number "))
-def fib(i,n) :
-    if i>=n :
-        return
-    if i==0 :
-
+def fib(n) :
+    if n==0 or n==1:
+        return n
+    
+    return fib(n-1)+fib(n-2)
+print(fib(n))
