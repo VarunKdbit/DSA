@@ -1,14 +1,13 @@
 #sort an array in ascending order using selectionsort
-def selectionsort(nums) :
-    n=len(nums)
-    for i in range (0,n) :
-        min_idx = i
-        for j in range(i+1,n) :
-            if nums[j]<nums[min_idx] :
-                min_idx=j
-        nums[i],nums[min_idx]=nums[min_idx],nums[i]
-    return nums
-
-nums=[5,6,1,3,8,9,0,2]
-print(selectionsort(nums))
+ar=[64,67,1,2,5,7,0,8]
+n=len(ar)
+for i in range (0,n) :
+    min=ar[i]
+    for j in range (i+1,n) :
+        if ar[j]<ar[i] :
+            min=ar[j]
+            ar[j],ar[i]=ar[i],ar[j]
+print(ar)
+#Time Complexity : O(n^2)
+#Space Complexity : O(1)
 
